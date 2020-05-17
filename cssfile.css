@@ -1,0 +1,44 @@
+body{
+
+}
+
+header img{
+    height: 50px;
+}
+
+#nav-bar {
+    list-style-type: none;
+    margin-top: -8px;
+    margin-left: -8px;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid;
+    line-height: 10px;
+    background-color: grey;
+    position: relative;
+    width: 108%;
+}
+
+#nav-bar>li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+#nav-bar>li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+
+#nav-bar>li:hover{
+    background-color: black;
+    color:white;
+}
+
+#nav-bar>li:last-child{
+    float: right;
+    border: none;
+    margin-right: 62px;
+}
