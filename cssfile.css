@@ -9,13 +9,17 @@ header img{
 
 #nav-bar {
     list-style-type: none;
-    padding: 0;
+    position: fixed;
     overflow: hidden;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    height: auto;
     width: 100%;
     line-height: 10px;
-    position: relative;
     border: 1px solid black;
-    background-color: grey;
+    background-color: #BFBDBA;
+    z-index: 2;
 }
 
 #nav-bar>li {
@@ -43,11 +47,12 @@ header img{
 
 #nav-bar>li:last-child a{
     border-right: none;
+    border-left: 1px solid #12120F;
 }
 
+
 .first-container{
-    position: relative;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .first-container img{
@@ -57,15 +62,73 @@ header img{
 
 .textMid{
     color: white;
-    position: absolute;
-    top: 37%;
-    right: 30%;
+    position: relative;
+    bottom: 225px;
     text-align: center;
     font-size: 48px;
     font-family: 'lobster' cursive;
+    z-index: 1;
 }
 
-.mainForm{
+.underline{
+    border-bottom: 1px solid #7B7B63;
+    width: 92%;
+    margin-left: 4%;
+}
+
+.addition{
+    background-color: #DEDCDC;
+    height: 100px;
+    margin-bottom: 7%;
+}
+
+.additionText{
+    font-size: 35px;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#second-container{
     display: flex;
-    flex-direction
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#second-container > div{
+    width: 300px;
+    height: 230px;
+}
+
+#second-container img{
+    width: 300px;
+    height: 230px;
+}
+
+#second-container > div > a{
+    text-decoration: none;
+    color: black;
+}
+
+#second-container > div > a > h3{
+    text-align:center;
+}
+
+.underlineMain{
+    width: 90%; 
+    margin-bottom: 3%;
+    margin-left: 5%;
+    border:1px solid grey;
+}
+
+#firstMain a:hover .underlineMain{ 
+    border: 1px solid #FD1616;
+}
+
+#secondMain a:hover .underlineMain{ 
+    border: 1px solid #FF9C05;
+}
+
+#thirdMain a:hover .underlineMain{ 
+    border: 1px solid  #059EFF ;
 }
