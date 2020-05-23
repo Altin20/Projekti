@@ -175,3 +175,38 @@ header img{
     margin-left: 20%;
     margin-right: 20%;
 }
+footer{
+    background-color: white;
+}
+
+#supportPage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer img{
+    width: 60px;
+    height: 45px;
+}
+
+.emailUs img {
+    margin-bottom: 30px;
+}
+
+#lastText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#lastText li{
+    margin-bottom: 50px;
+}
+
+#lastText li a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
