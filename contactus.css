@@ -1,138 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
+.introduction{
+    text-align:center;
+    margin-top: 10%;
 }
 
-.header img{
-    height: 50px;
-}
-
-#nav-bar {
-    list-style-type: none;
-    position: fixed;
-    overflow: hidden;
-    margin: 0;
-    top: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-    line-height: 10px;
-    border: 1px solid black;
-    background-color: #312E2E;
-    z-index: 2;
-}
-
-#nav-bar>li {
-    float: left;
-}
-
-#nav-bar>li a{
+.introduction span{
     display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-right: 1px solid #12120F;
+    animation: text 3s 1;
+    animation-fill-mode: forwards;
 }
 
-.active{
-    background-color: green;
+.introductionText{
+    font-size: 80px;
+    color:black;
+    letter-spacing: -50px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: -60px;
 }
 
-#nav-bar>li a:hover:not(.active){
-    background-color: black;
-    color: white;
+@keyframes text {
+    0%{
+        letter-spacing: -30px;
+    }
+    25%{
+        letter-spacing: 18px;
+    }
+    70%{
+        letter-spacing: 1px;
+        margin-bottom: -3px;
+        color: black;
+    }
+    100%{
+        letter-spacing: 1px;
+        margin-bottom: -3px;
+        color:black;
+    }
 }
 
-#nav-bar>li:last-child{
-    float: right;
-}
-
-#nav-bar>li:last-child a{
-    border-right: none;
-    border-left: 1px solid #12120F;
-}
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-body{
-    background: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rp-bentley-continental-gt-v8-20-2-1570633139.jpg') no-repeat top center;
+#contact{
+    border: 1px solid black;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-bmw-330i-123-1567012839.jpg?crop=1xw:1xh;center,top&resize=980:*);
     background-size: cover;
-    height: 100vh; 
+    padding: 20px 20px;
 }
 
-.contact{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    padding: 0 20px;
-}
-
-.contact-form{
-    max-width: 550px;
-    margin: 0 auto;
-    background: rgba(0,0,0,0,8);
-    padding: 30px;
-    border-radius: 5px;
-    display: flex;
-    box-shadow: 0 0 10px;
-}
-.input-fields{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-}
-
-.input-fields,
-.msg{
-    width: 48%;
-}
-
-.input-fields .input,
-.msg textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #c5ecfd;
-    padding: 10px;
-    color: #c5ecfd;
-    width: 100%;
-}
-
-.msg textarea{
-    height: 212px;
-}
-
-.aa{
-    background: #39b7dd;
+#contact h1{
     text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
-@media screen and (max-width: 600px){
-    .contact-form{
-        flex-direction: column;
-    }
-    .msg textarea{
-        height: 80px;
-    }
-    .input-fields,
-    .msg{
-        widows: 100%;
-    }
-} */
+.seperate{
+    width: 50%;
+    height: 6px;
+    background: red;
+    margin: 40px 25% 70px;
+}
+
+.contactForm{
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 20px 10%;
+    bordeR: 0;
+    max-width: 600px;
+    background: #111;
+    padding: 25px;
+    color: white;
+    transition: width 0.5s ease-in-out;
+}
+
+
+.contactForm:focus{
+    box-shadow: 0 0 10px 4px #295078;
+    width: 100%;
+}
+
+
+#textArea{
+    resize: none;
+    padding: 40px 20px;
+}
+
+#submit{
+    color: white;
+    background-color: #809EEC;
+    float:right;
+    margin-right: 12%;
+    border: 0;
+    padding: 15px 50px;
+    margin-top: -67px;
+    border-radius: 20px;
+    transition: 0.5s
+}
+
+#submit:hover{
+    background-color: rgb(64, 112, 236);
+}
