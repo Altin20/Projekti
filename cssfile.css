@@ -3,18 +3,14 @@
     padding: 0;
 }
 
-header img{
+nav img{
     height: 50px;
 }
 
-#nav-bar {
+nav ul {
     list-style-type: none;
+    float: left;
     position: fixed;
-    overflow: hidden;
-    margin: 0;
-    top: 0;
-    padding: 0;
-    height: auto;
     width: 100%;
     line-height: 10px;
     border: 1px solid black;
@@ -22,11 +18,12 @@ header img{
     z-index: 2;
 }
 
-#nav-bar>li {
+nav ul li {
     float: left;
+    position: relative;
 }
 
-#nav-bar>li a{
+nav ul li a{
     display: block;
     color: white;
     text-align: center;
@@ -40,20 +37,39 @@ header img{
     background-color: green;
 }
 
-#nav-bar>li a:hover:not(.active){
+nav ul li a:hover:not(.active){
     background-color: black;
     color: white;
 }
 
-#nav-bar>li:last-child{
+nav ul li:last-child{
     float: right;
 }
 
-#nav-bar>li:last-child a{
+nav ul li:last-child a{
     border-right: none;
-    border-left: 1px solid #12120F;
 }
 
+nav ul li ul{
+    display: none;
+    position: absolute;
+}
+
+nav ul li ul li{
+    width: 108px;
+}
+
+nav ul li ul li a{
+    padding: 20px 24px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li a:hover{
+    background-color: black;
+}
 
 .first-container{
     margin: 0;

@@ -13,25 +13,26 @@
                 <li> <a href = "contactus.html"> Contact </a> </li>
                 <li> <a href = "#" class = "active"> Register </a>
                     <ul> 
-                        <li> <a href = "login.html" class = "active" target = "_blank"> Log In </a> </li>
-                        <li> <a href = "register.html" target = "_blank"> Sign up </a> </li>
+                        <li> <a href = "login.html" target = "_blank"> Log In </a> </li>
+                        <li> <a href = "register.html" class = "active" target = "_blank"> Sign up </a> </li>
                     </ul>
                 </li>
             </ul>
         </nav>
   
         <div id = "contact">
-            <h1> Log-in </h1>
+            <h1> Create your account </h1>
             <form id = "form">
+                <label for = "name" class = "labels"> Username: </label>
+                <input type = "name" id = "fullname" class = "contactForm"><br>
                 <label for = "email" class = "labels"> Email Address:</label>
-                <input type = "email" id = "email" class = "contactForm" style = "margin-bottom: 20px;" required><br>
+                <input type = "email" id = "email" class = "contactForm" required><br>
                 <label for = "pass" class = "labels"> Password: </label>
                 <input type = "password" class = "contactForm" id = "pass"><br>
-                <input type = "button" value = "submit" class = "submit" id = "submitButton" onclick="valid()">
+                <input type = "button" class = "submit" value = "submit" id = "submitButton" onclick = "validate()">
             </form>
-            <a href = "register.html"> New to the site?</a>
+            <a href = "login.html" style = "margin-left: 20%;"> Already have an account?</a>
         </div>
-    </body>
-    
-    <script src = "Validation.js"></script>
+        <script src = "Validation.js"></script>
+    </body> 
 </html> 

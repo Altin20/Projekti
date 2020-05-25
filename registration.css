@@ -71,105 +71,75 @@ nav ul li ul li a:hover{
     background-color: black;
 }
 
-
-.introduction{
-    text-align:center;
-    margin-top: 10%;
-}
-
-.introduction span{
-    display: block;
-    animation: text 3s 1;
-    animation-fill-mode: forwards;
-}
-
-.introductionText{
-    font-size: 80px;
-    color:black;
-    letter-spacing: -50px;
-    font-weight: 400;
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
     position: relative;
-    margin-bottom: -60px;
-}
-
-@keyframes text {
-    0%{
-        letter-spacing: -30px;
-    }
-    25%{
-        letter-spacing: 18px;
-    }
-    70%{
-        letter-spacing: 1px;
-        margin-bottom: -3px;
-        color: black;
-    }
-    100%{
-        letter-spacing: 1px;
-        margin-bottom: -3px;
-        color:black;
-    }
+    top: 110px;
 }
 
 #contact{
     border: 1px solid black;
-    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-bmw-330i-123-1567012839.jpg?crop=1xw:1xh;center,top&resize=980:*);
+    background-image: url(https://astronomy.com/-/media/Images/News%20and%20Observing/Sky%20this%20Week/STW%202020/April/MarsJupiterSaturn.jpg?mw=600https://astronomy.com/-/media/Images/News%20and%20Observing/Sky%20this%20Week/STW%202020/April/MarsJupiterSaturn.jpg?mw=600);
     background-size: cover;
-    padding: 20px 20px;
-    height: 800px;
+    padding: 20px 10px;
+    height: 900px;
 }
 
 #contact h1{
     text-align: center;
+    position: relative;
     color: white;
     font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.seperate{
-    width: 50%;
-    height: 6px;
-    background: red;
-    margin: 40px 25% 70px;
+    top: 50px;
+    margin-bottom: 12%;
 }
 
 .contactForm{
     display: block;
-    width: 20%;
+    width: 80%;
     box-sizing: border-box;
-    margin: 20px 10%;
-    bordeR: 0;
-    max-width: 800px;
+    margin: 30px 20%;
+    border: 0;
+    max-width: 600px;
     background: #111;
-    padding: 25px;
+    padding: 20px;
     color: white;
     transition: width 0.5s ease-in-out;
 }
 
-
-.contactForm:focus{
-    box-shadow: 0 0 10px 4px #295078;
-    width: 100%;
+.labels{
+    position: relative;
+    top: 30px;
+    margin: 0 20%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    border: 0;
 }
 
-
-#textArea{
-    resize: none;
-    padding: 40px 20px;
-}
-
-#submit{
+.submit{
     color: white;
     background-color: #809EEC;
     float:right;
-    margin-right: 7%;
+    margin-right: 19%;
     border: 0;
     padding: 15px 50px;
-    border-radius: 20px;
-    transition: 0.5s;
     cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s
 }
 
-#submit:hover{
+.submit:hover{
     background-color: rgb(64, 112, 236);
+}
+
+
+
+#contact a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20%;
+    font-size: 20px;
 }
