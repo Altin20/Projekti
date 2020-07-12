@@ -3,35 +3,34 @@
     <meta charset="UTF-8">
     <title>Contact Us</title>
     <link rel="stylesheet" href="registration.css">
-</html>
     <body>
-        <nav>
-            <ul style = "margin-bottom: 50px;">
-                <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7RJzLc5kSpSgVu-5--W17BtJ4nWfc-V4uzyAQpI37UwoIQMUE&usqp=CAU" alt = ""> </li>
-                <li> <a href = "websitecar.html"> Home </a> </li>
-                <li> <a href = "aboutus.html"> About </a> </li>
-                <li> <a href = "contactus.html"> Contact </a> </li>
-                <li> <a href = "#" class = "active"> Register </a>
-                    <ul> 
-                        <li> <a href = "login.html" target = "_blank"> Log In </a> </li>
-                        <li> <a href = "register.html" class = "active" target = "_blank"> Sign up </a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-  
         <div id = "contact">
-            <h1> Create your account </h1>
+            <div class = "header"> 
+                <h2> Create your account </h2>
+            </div>
             <form id = "form">
-                <label for = "name" class = "labels"> Username: </label>
-                <input type = "name" id = "fullname" class = "contactForm"><br>
-                <label for = "email" class = "labels"> Email Address:</label>
-                <input type = "email" id = "email" class = "contactForm" required><br>
-                <label for = "pass" class = "labels"> Password: </label>
-                <input type = "password" class = "contactForm" id = "pass"><br>
-                <input type = "button" class = "submit" value = "submit" id = "submitButton" onclick = "validate()">
+                <div class = "controlForm"> 
+                    <label for = "fullname" class = "labels" id = "labelName"> Username: </label>
+                    <input type = "name" id = "name" class = "contactForm"><br>
+                    <small> </small>
+                </div>
+                <div class = "controlForm"> 
+                    <label for = "email" class = "labels"> Email Address:</label>
+                    <input type = "email" id = "email" class = "contactForm"><br>
+                    <small> </small>
+                </div>
+                <div class = "controlForm">
+                    <label for = "password" class = "labels"> Password: </label>
+                    <input type = "password" class = "contactForm" id = "password"><br>
+                    <small> </small>
+                </div>
+                <div class = "controlForm">
+                    <label for = "password" class = "labels" id = "labelPass2"> Confirm Password: </label>
+                    <input type = "password" class = "contactForm" id = "checkPassword"><br>
+                    <small> </small>
+                </div>
+                <button type = "submit" class = "submit" id = "submitButton"> Submit </button>
             </form>
-            <a href = "login.html" style = "margin-left: 20%;"> Already have an account?</a>
         </div>
         <script src = "Validation.js"></script>
     </body> 

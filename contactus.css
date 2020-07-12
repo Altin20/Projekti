@@ -3,120 +3,11 @@
     padding: 0;
 }
 
-nav img{
-    height: 50px;
-}
-
-nav ul {
-    list-style-type: none;
-    float: left;
-    position: fixed;
-    width: 100%;
-    line-height: 10px;
-    border: 1px solid black;
-    background-color: #312E2E;
-    z-index: 2;
-}
-
-nav ul li {
-    float: left;
-    position: relative;
-}
-
-nav ul li a{
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-right: 1px solid #12120F;
-}
-
-.active{
-    background-color: green;
-}
-
-nav ul li a:hover:not(.active){
-    background-color: black;
-    color: white;
-}
-
-nav ul li:last-child{
-    float: right;
-}
-
-nav ul li:last-child a{
-    border-right: none;
-}
-
-nav ul li ul{
-    display: none;
-    position: absolute;
-}
-
-nav ul li ul li{
-    width: 108px;
-}
-
-nav ul li ul li a{
-    padding: 20px 24px;
-}
-
-nav ul li:hover ul{
-    display: block;
-}
-
-nav ul li ul li a:hover{
-    background-color: black;
-}
-
-
-.introduction{
-    text-align:center;
-    margin-top: 10%;
-}
-
-.introduction span{
-    display: block;
-    animation: text 3s 1;
-    animation-fill-mode: forwards;
-}
-
-.introductionText{
-    font-size: 80px;
-    color:black;
-    letter-spacing: -50px;
-    font-weight: 400;
-    position: relative;
-    margin-bottom: -60px;
-}
-
-@keyframes text {
-    0%{
-        letter-spacing: -30px;
-    }
-    25%{
-        letter-spacing: 18px;
-    }
-    70%{
-        letter-spacing: 1px;
-        margin-bottom: -3px;
-        color: black;
-    }
-    100%{
-        letter-spacing: 1px;
-        margin-bottom: -3px;
-        color:black;
-    }
-}
-
 #contact{
     border: 1px solid black;
     background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-bmw-330i-123-1567012839.jpg?crop=1xw:1xh;center,top&resize=980:*);
     background-size: cover;
-    padding: 20px 20px;
-    height: 800px;
+    height: 830px;
 }
 
 #contact h1{
@@ -133,17 +24,35 @@ nav ul li ul li a:hover{
     margin: 40px 25% 70px;
 }
 
+#form{
+    padding: 25px 30px;
+}
+
+.controlForm{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
 .contactForm{
     display: block;
     width: 20%;
     box-sizing: border-box;
-    margin: 20px 10%;
-    bordeR: 0;
+    margin: 12px 10% 0 10%;
+    border: 0;
     max-width: 800px;
     background: #111;
     padding: 25px;
     color: white;
     transition: width 0.5s ease-in-out;
+}
+
+.controlForm small{
+    font-size: 18px;
+    position: relative;
+    color: red;
+    left: 10%;
+    bottom: 0;
 }
 
 

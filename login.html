@@ -2,36 +2,28 @@
 <html lang = "en">
     <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="login.css">
 </html>
     <body>
-        <nav>
-            <ul style = "margin-bottom: 50px;">
-                <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7RJzLc5kSpSgVu-5--W17BtJ4nWfc-V4uzyAQpI37UwoIQMUE&usqp=CAU" alt = ""> </li>
-                <li> <a href = "websitecar.html"> Home </a> </li>
-                <li> <a href = "aboutus.html"> About </a> </li>
-                <li> <a href = "contactus.html"> Contact </a> </li>
-                <li> <a href = "#" class = "active"> Register </a>
-                    <ul> 
-                        <li> <a href = "login.html" class = "active" target = "_blank"> Log In </a> </li>
-                        <li> <a href = "register.html" target = "_blank"> Sign up </a> </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-  
         <div id = "contact">
-            <h1> Log-in </h1>
+            <div class = "header"> 
+                <h2> Log-in </h2>
+            </div>
             <form id = "form">
-                <label for = "email" class = "labels"> Email Address:</label>
-                <input type = "email" id = "email" class = "contactForm" style = "margin-bottom: 20px;" required><br>
-                <label for = "pass" class = "labels"> Password: </label>
-                <input type = "password" class = "contactForm" id = "pass"><br>
-                <input type = "button" value = "submit" class = "submit" id = "submitButton" onclick="valid()">
+                <div class = "controlForm"> 
+                    <label for = "email" class = "labels"> Email Address:</label>
+                    <input type = "email" id = "email" class = "contactForm"><br>
+                    <small> </small>
+                </div>
+                <div class = "controlForm">
+                    <label for = "password" class = "labels"> Password: </label>
+                    <input type = "password" class = "contactForm" id = "password"><br>
+                    <small> </small>
+                </div>
+                <button type = "submit" class = "submit" id = "submitButton"> Submit </button>
             </form>
-            <a href = "register.html"> New to the site?</a>
         </div>
     </body>
     
-    <script src = "Validation.js"></script>
+    <script src = "loginV.js"></script>
 </html> 
