@@ -9,18 +9,18 @@
             <div class = "header"> 
                 <h2> Log-in </h2>
             </div>
-            <form id = "form">
+            <form id = "form" action="php/loginLogic.php" method="GET">
                 <div class = "controlForm"> 
                     <label for = "email" class = "labels"> Email Address:</label>
-                    <input type = "email" id = "email" class = "contactForm"><br>
+                    <input type = "email" id = "email" name = "emailInp" class = "contactForm"><br>
                     <small> </small>
                 </div>
                 <div class = "controlForm">
                     <label for = "password" class = "labels"> Password: </label>
-                    <input type = "password" class = "contactForm" id = "password"><br>
+                    <input type = "password" name = "passwordInp" class = "contactForm" id = "password"><br>
                     <small> </small>
                 </div>
-                <button type = "submit" class = "submit" id = "submitButton"> Submit </button>
+                <button type = "submit" name = "submit" class = "submit" id = "submitButton"> Submit </button>
             </form>
         </div>
     </body>
