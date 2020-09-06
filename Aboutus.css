@@ -36,6 +36,14 @@
 .topnav .icon {
     display: none;
 }
+
+.topnav a:nth-child(4){
+    float: right;
+}
+
+.topnav a:nth-child(5){
+    float: right;
+}
   
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
